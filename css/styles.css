@@ -109,7 +109,7 @@ body {
 .active {
   color: #404bbf;
 }
-.nav-list-link.active::after {
+.line.active::after {
   color: #404bbf;
   background-color: #404bbf;
 }

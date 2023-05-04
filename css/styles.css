@@ -99,7 +99,6 @@ body {
   content: "";
   position: absolute;
   display: block;
-
   border-radius: 2px;
   height: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -111,6 +110,7 @@ body {
   color: #404bbf;
 }
 .nav-list-link.active::after {
+  color: #404bbf;
   background-color: #404bbf;
 }
 
@@ -413,7 +413,7 @@ body {
   height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-icon:hover {
   background-color: #404bbf;
@@ -454,6 +454,7 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   color: #8e8f99;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .five-list-link:hover {
   border-color: #404bbf;
@@ -547,6 +548,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-link:hover {
   background-color: #31d0aa;

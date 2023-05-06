@@ -653,6 +653,12 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.img-lead:hover {
+  transform: translateY(0%);
+}
+.img-lead:focus {
+  transform: translateY(0%);
+}
 .img-list {
   display: block;
 }

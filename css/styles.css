@@ -94,7 +94,21 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
-
+.nav-list-link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 2px;
+  height: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+}
+.nav-list-link:active::after {
+  color: #404bbf;
+  background-color: #404bbf;
+}
 .line::after {
   content: "";
   position: absolute;
@@ -107,9 +121,6 @@ body {
   width: 100%;
 }
 .active {
-  color: #404bbf;
-}
-.no-active {
   color: #404bbf;
 }
 .line.active::after {

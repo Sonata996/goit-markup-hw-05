@@ -94,7 +94,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
-.line::after {
+.nav-list-link::after {
   content: "";
   position: absolute;
   display: block;
@@ -108,13 +108,12 @@ body {
 .active {
   color: #404bbf;
 }
-
-.line.active::after {
+.nav-list-link.active::after {
   background-color: #404bbf;
 }
 
 /*  зміни кольору шрифту при наведені мишкою */
-.nav-list-link.line:hover {
+.nav-list-link:hover {
   color: #404bbf;
 }
 /* зміни кольору шрифту при кліку на посилання */
@@ -655,7 +654,29 @@ body {
 .img-list {
   display: block;
 }
-
+/* cart info */
+.cart-info {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  padding: 40px 32px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #4d5ae5;
+}
+.ocerlay-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
 /* meseng list */
 .meseng-list {
   display: flex;
